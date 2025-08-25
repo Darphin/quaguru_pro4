@@ -5,7 +5,7 @@ dotenv.load_dotenv()
 import uvicorn
 from fastapi import FastAPI
 
-from routers import status, users
+from app.routers import status, users
 from app.database.engine import create_db_and_tables
 
 app = FastAPI()
